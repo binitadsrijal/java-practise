@@ -36,7 +36,7 @@ public class array {   //input in array
     }
 }
 */
-
+/* 
 public class array{
       static void change(int[]arr){
             for(int i=0;i<arr.length;i++){
@@ -54,5 +54,13 @@ public class array{
 for(int i=0;i<arr.length;i++){
     System.out.print(arr[i]+" ");
 }
+    }
+}
+*/
+public class array{
+    public static void main(String[]args){
+        for(int i=0;i<10;i++){
+            System.out.println("Hello world");
+        }
     }
 }
