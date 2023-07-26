@@ -45,7 +45,7 @@ public class array{
         }
     public static void main(String[]args){
     
-        int arr[]=new int [3];
+        int arr[]=new int [3];  //array as reference variable
        arr[0]=2;
        arr[1]=3;
        arr[2]=4;
