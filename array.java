@@ -1,5 +1,6 @@
 
-import java.util.*;   
+import java.util.*;
+
 /*class Arrayexample{
     void demoarray(){
         int ages[]=new int[3];
@@ -57,9 +58,9 @@ for(int i=0;i<arr.length;i++){
     }
 }
 */
-public class array{
-    public static void main(String[]args){
-        for(int i=0;i<10;i++){
+public class array {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
             System.out.println("Hello world");
         }
     }
