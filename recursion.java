@@ -37,7 +37,7 @@ import java.util.Scanner;
  */
 
 // more problems
-
+/* 
 public class recursion { // factorial of n
     static int fact(int n) {
         // base case
@@ -54,5 +54,20 @@ public class recursion { // factorial of n
 
     public static void main(String[] args) {
         System.out.println(fact(4));
+    }
+}
+*/
+           //fibonacci series
+public class recursion{
+static int fibonacci(int n){
+    if(n==0 || n==1){
+        return n;
+    }
+    return fibonacci(n-1)+fibonacci(n-2);
+}
+    public static void main(String[]args){
+        for(int i=0;i<10;i++){   //upto 10th term fibonacci series
+System.out.println(fibonacci(i));
+        }
     }
 }
