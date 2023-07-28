@@ -58,10 +58,77 @@ for(int i=0;i<arr.length;i++){
     }
 }
 */
+// public class array {
+//     public static void main(String[] args) {  //for loop
+//         for (int i = 0; i < 10; i++) {
+//             System.out.println("Hello world");
+//         }
+//     }
+// }
+
+// public class array{   //swaping two values with third variable
+//     static void swap(int a,int b){
+//         System.out.println("before swap");
+//         System.out.println("a:"+a+"   b:"+b);
+//         int temp=a;
+//         a=b;
+//         b=temp;
+//         System.out.println("after swap");
+//         System.out.println("a:"+a+"   b:"+b);
+
+//     }
+//     public static void main(String[]args){
+// swap(5,8);
+//     }
+// }
+
+//reversing an array of length k with new array 
+// public class array{  
+//     static int[] reversearr(int a[]){
+//         int n=a.length;
+//      int ans[]=new int[n];
+//    /*  int j=0;
+//      traversing array in reverse direction
+//     for(int i=n-1;i>=0;i--){ using for loop
+//        ans[j++]=a[i];
+//     */  }
+//     int i=n-1,j=0;
+//     while(i>=0){
+//         ans[j++]=a[i--];
+//     }
+//      return ans;
+//     }
+//     public static void main(String[]args){
+// int[]a={1,2,3,4,5,6,7};
+// int ans[]= reversearr(a);
+// for(int i=0;i<a.length;i++){
+//     System.out.print(ans[i]+" ");
+// }
+// System.out.println();
+//     }
+// }
+
+//reversing array without creating another array
+/* 
 public class array {
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Hello world");
+    static void reverse(int[] arr) {
+        int i = 0, j = arr.length - 1;
+        while (i < j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
         }
     }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 2, 3, 4, 5 };
+        reverse(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
 }
+*/
