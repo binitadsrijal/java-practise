@@ -164,10 +164,9 @@ public class array {
     }
 } 
 */
- 
 
 //rotate an array without creating new array : swapping in one array
-
+/* 
 public class array{
     static void rotating(int[]arr,int i,int j){
 //swap
@@ -197,6 +196,49 @@ rotating(arr, 0, n-1);
         //printing
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
+        }
+    }
+}
+*/
+
+//to search the occurence of multiple elements in array
+public class array {
+    static int[] frequency(int[] arr) {
+        int n = arr.length;
+        int ans[] = new int[100005];
+        for (int i = 0; i < n; i++) {
+            ans[arr[i]]++;
+        }
+        return ans;
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println("enter array size");
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+
+        int arr[] = new int[s];
+        System.out.println("enter"+ s+" elements");
+
+        for (int i = 0; i < s; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int[] ans = frequency(arr);
+
+        System.out.println("enter number of queries:");
+        int q = sc.nextInt();
+
+        while (q > 0) {
+            System.out.println("enter number to be searched:");
+            int x = sc.nextInt();
+            
+            if (ans[x] > 0) {
+                System.out.println("yes");
+            } else {
+                System.out.println("No");
+            }
+            q--;
         }
     }
 }
