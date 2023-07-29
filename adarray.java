@@ -106,6 +106,7 @@ public class adarray {
 }
 */
 //sorting the square of array(non decreasing array) in non decreasing order 
+/* 
 
 public class adarray {
      static void reverse(int[] arr) {
@@ -152,4 +153,23 @@ public class adarray {
 
     }
 }
+*/
+
 // prefix sum questions
+public class adarray{
+    static int[] prefixxx(int a[]){
+        int n=a.length;
+        for(int i=1;i<a.length;i++){
+            a[i]=a[i-1]+a[i];
+        }
+        return a;
+    }
+    public static void main(String[]args){
+        int a[]={1,2,3,4,5,6};
+        int []ans=prefixxx(a);
+        System.out.println("prefix sum:");
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+}
