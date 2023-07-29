@@ -202,6 +202,7 @@ rotating(arr, 0, n-1);
 */
 
 //to search the occurence of multiple elements in array
+/* 
 public class array {
     static int[] frequency(int[] arr) {
         int n = arr.length;
@@ -242,3 +243,4 @@ public class array {
         }
     }
 }
+*/
