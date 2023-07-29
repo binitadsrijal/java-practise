@@ -132,8 +132,71 @@ public class array {
     }
 }
 */
+
+//rotate an array with k steps
+/* 
+public class array {
+    static int[] rotatearr(int arr[], int k) {
+        int n = arr.length;
+        int ans[] = new int[n];
+        k = k % n;
+        int j = 0;
+
+        for (int i = n - k; i <= n - 1; i++) {
+            ans[j] = arr[i];
+            j++;
+        }
+        for (int i = 0; i <= n - k - 1; i++) {
+            ans[j] = arr[i];
+            j++;
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 2, 3, 4, 5, 6 };
+        Scanner sc = new Scanner(System.in);
+        int k = sc.nextInt();
+        int ans[] = rotatearr(arr, k);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(ans[i]);
+        }
+    }
+} 
+*/
+ 
+
+//rotate an array without creating new array : swapping in one array
+
 public class array{
+    static void rotating(int[]arr,int i,int j){
+//swap
+while(i<j){
+    int temp=arr[j];
+    arr[j]=arr[i];
+    arr[i]=temp;
+    i++;
+    j--;
+}
+
+    }
+    static void rotate(int []arr,int k){
+        int n=arr.length;
+        k=k%n;
+rotating(arr, 0, n-k-1);
+rotating(arr, n-k, n-1);
+rotating(arr, 0, n-1);
+
+    }
     public static void main(String[]args){
-        System.out.println("hello world");
+        int arr[]={3,4,5,6,7,8,9};
+        int n=arr.length;
+        Scanner sc= new Scanner(System.in);
+        int k= sc.nextInt();
+        rotate(arr, k);
+        //printing
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
     }
 }
