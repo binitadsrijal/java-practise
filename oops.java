@@ -29,7 +29,7 @@
 //     }
 // }
 
-//oops with user defined constructor
+//oops with parameterized constructor-----------------------------------------------------*
 
 class Operations {
     int a;

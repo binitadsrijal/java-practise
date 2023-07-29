@@ -37,6 +37,8 @@ public class array {   //input in array
     }
 }
 */
+
+//array as reference variable-----------------------------------------------------------------*
 /* 
 public class array{
       static void change(int[]arr){
@@ -46,7 +48,7 @@ public class array{
         }
     public static void main(String[]args){
     
-        int arr[]=new int [3];  //array as reference variable
+        int arr[]=new int [3];  
        arr[0]=2;
        arr[1]=3;
        arr[2]=4;
@@ -66,7 +68,8 @@ for(int i=0;i<arr.length;i++){
 //     }
 // }
 
-// public class array{   //swaping two values with third variable
+ //swaping two values with third variable---------------------------------------------------------*
+// public class array{  
 //     static void swap(int a,int b){
 //         System.out.println("before swap");
 //         System.out.println("a:"+a+"   b:"+b);
@@ -82,7 +85,8 @@ for(int i=0;i<arr.length;i++){
 //     }
 // }
 
-//reversing an array of length k with new array 
+//reversing an array of length k with new array---------------------------------------- -----*
+
 // public class array{  
 //     static int[] reversearr(int a[]){
 //         int n=a.length;
@@ -108,7 +112,7 @@ for(int i=0;i<arr.length;i++){
 //     }
 // }
 
-//reversing array without creating another array
+//reversing array without creating another array----------------------------------------------*
 /* 
 public class array {
     static void reverse(int[] arr) {
@@ -133,7 +137,7 @@ public class array {
 }
 */
 
-//rotate an array with k steps
+//rotate an array with k steps--------------------------------------------------------------*
 /* 
 public class array {
     static int[] rotatearr(int arr[], int k) {
@@ -165,7 +169,7 @@ public class array {
 } 
 */
 
-//rotate an array without creating new array : swapping in one array
+//rotate an array without creating new array : swapping in one array---------------------------*
 /* 
 public class array{
     static void rotating(int[]arr,int i,int j){
@@ -201,7 +205,7 @@ rotating(arr, 0, n-1);
 }
 */
 
-//to search the occurence of multiple elements in array
+//to search the occurence of multiple elements in array--------------------------------------*
 /* 
 public class array {
     static int[] frequency(int[] arr) {

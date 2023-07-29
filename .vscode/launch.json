@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "array2d",
+            "request": "launch",
+            "mainClass": "array2d",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
             "name": "adarray",
             "request": "launch",
             "mainClass": "adarray",

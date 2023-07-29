@@ -1,8 +1,8 @@
 import java.util.Scanner;
+ //printing from 1 to n numbers through recursion-------------------------------------------*
 /*
  * public class recursion{
- * static void printnumbers(int n){ //printing from 1 to n numbers through
- * recursion
+ * static void printnumbers(int n){
  * if(n==1){
  * System.out.println(n);
  * return;
@@ -17,11 +17,13 @@ import java.util.Scanner;
  * }
  * }
  */
+
+
+ //printing from n to 1 numbers through recursion-------------------------------------*
 /*
  * public class recursion{
  * 
- * static void printnumbers(int n){ //printing from n to 1 numbers through
- * recursion
+ * static void printnumbers(int n){ 
  * if(n==1){
  * System.out.println(n);
  * return;
@@ -36,7 +38,7 @@ import java.util.Scanner;
  * }
  */
 
-// more problems
+// more problems(Factorial of number)--------------------------------------------------*
 /* 
 public class recursion { // factorial of n
     static int fact(int n) {
@@ -57,7 +59,8 @@ public class recursion { // factorial of n
     }
 }
 */
-           //fibonacci series
+           //fibonacci series--------------------------------------------------------------*
+
 public class recursion{
 static int fibonacci(int n){
     if(n==0 || n==1){
