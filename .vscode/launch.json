@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Arrayist",
+            "request": "launch",
+            "mainClass": "Arrayist",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
+            "name": "Arraylist",
+            "request": "launch",
+            "mainClass": "Arraylist",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
+            "name": "arraylist",
+            "request": "launch",
+            "mainClass": "arraylist",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
             "name": "array2d",
             "request": "launch",
             "mainClass": "array2d",
