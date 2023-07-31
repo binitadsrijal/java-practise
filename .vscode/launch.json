@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "string",
+            "request": "launch",
+            "mainClass": "string",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
+            "name": "love",
+            "request": "launch",
+            "mainClass": "love",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
             "name": "Arrayist",
             "request": "launch",
             "mainClass": "Arrayist",

@@ -42,6 +42,8 @@ public class Arraylist {
         a1.add(9);
         a1.add(4);
         a1.add(3);
+        a1.add(2);
+        a1.add(4);
         // System.out.println("original list");
         // System.out.println(a1);
         // Collections.reverse(a1);  //reversing using method-----------------------*
@@ -57,5 +59,10 @@ public class Arraylist {
         Collections.sort(a1,Collections.reverseOrder());
         System.out.println("In descending order");
         System.out.println(a1);
+
+System.out.println(a1.lastIndexOf(Integer.valueOf(4)));
+System.out.println(a1.lastIndexOf(Integer.valueOf(2)));
+System.out.println(a1.lastIndexOf(Integer.valueOf(7)));
+        
     }
 }
