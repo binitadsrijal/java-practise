@@ -1,3 +1,5 @@
+//import package1.employee;
+/* 
 class Students {
     int roll;
     String name;
@@ -30,3 +32,14 @@ public class oops22 {
 
     }
 }
+*/
+//using packages
+/* 
+public class oops22{
+    public static void main(String[]args){
+        employee e3=new employee();
+        e3.id=2;   //not getting accessed cuz of default modifier
+        System.out.println(e3.id);  //not visible
+    }
+}
+*/
