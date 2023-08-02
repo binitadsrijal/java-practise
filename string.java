@@ -50,7 +50,7 @@ public class string{
 
 //java string builder class--------------------------------------------------------------*
 
-
+/* 
 public class string{    //mutable higher performance than string
     public static void main(String[]args){
         StringBuilder str= new StringBuilder("HELLO");
@@ -68,3 +68,4 @@ public class string{    //mutable higher performance than string
         System.out.println(str);
         }
 }
+*/

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "oops2",
+            "request": "launch",
+            "mainClass": "oops2",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
+            "name": "Students$oops2",
+            "request": "launch",
+            "mainClass": "Students$oops2",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
             "name": "string",
             "request": "launch",
             "mainClass": "string",
