@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "linkedlist$Node",
+            "request": "launch",
+            "mainClass": "linkedlist$Node",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
             "name": "oops2",
             "request": "launch",
             "mainClass": "package1.oops2",
