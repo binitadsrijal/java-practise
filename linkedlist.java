@@ -60,7 +60,7 @@ recursive(n1);
 */
 
 //insertAtEnd---------------------------------------------------------------------*
-
+/* 
 public class linkedlist {
     public static class Node {
         int data;
@@ -111,7 +111,53 @@ public class linkedlist {
         ll.insertAtEnd(5);
         ll.display();
         System.out.println(ll.count());
+    }
+}
+*/
+
+//insert at start------------------------------------------------------------------------*
+
+public class linkedlist {
+    public static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+        }
 
     }
 
+    public static class linked {
+        Node head = null;
+        Node tail = null;
+
+        void InsertAtStart(int val) {
+            Node temp = new Node(val);
+            if (head == null) {
+                head = temp;
+                tail = temp;
+            } else {
+                temp.next = head;
+                head=temp;
+            }
+        }
+
+        void display(){
+            Node temp=head;
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        linked ll = new linked();
+        ll.InsertAtStart(2);
+        ll.InsertAtStart(4);
+        ll.InsertAtStart(6);
+        ll.display();
+
+    }
 }
