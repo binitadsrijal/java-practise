@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "linkedlist",
+            "request": "launch",
+            "mainClass": "linkedlist",
+            "projectName": "java1_6b3e217d"
+        },
+        {
+            "type": "java",
             "name": "selectionsort",
             "request": "launch",
             "mainClass": "sorting.selectionsort",
