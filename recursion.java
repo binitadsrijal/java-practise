@@ -76,15 +76,44 @@ System.out.println(fibonacci(i));
 */
 
 //calculating sum of each digit-------------------------------------------------------*
-
+/* 
 public class recursion {
     static int sof(int n) {
         if ((n >= 0) && (n <= 9))
             return n;
-        return sof(n / 10) + n % 10; // sof(n/10) gives the sum of (n-1)th sum & n%10 gives nth term
+        return sof(n / 10) + n % 10; // sof(n/10) gives the sum of (n-1)th digit sum & n%10 gives nth term
     }
 
     public static void main(String[] args) {
         System.out.println(sof(1234));
+    }
+}
+*/
+
+//return the count of digit in number eg(1234) n=4
+/* 
+public class recursion{
+    static int count(int num){
+        int countt=0;
+if((num>=0)&&(num<=9)) return num;
+
+
+
+    }
+    public static void main(String[]args){
+System.out.println(count(123345));
+    }
+}
+*/
+
+//p^q using recursion
+public class recursion{
+    static int pow(int a,int b){
+        if(b==0) return 1;
+        return pow(a,b-1)*a;
+    }
+    public static void main(String[]args){
+
+        System.out.println(pow(2,3));
     }
 }
