@@ -107,13 +107,32 @@ System.out.println(count(123345));
 */
 
 //p^q using recursion
+/* 
+public class recursion { // time complexity =O(b);
+    static int pow(int a, int b) {
+        if (b == 0)
+            return 1;
+        return pow(a, b - 1) * a;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(pow(2, 3));
+    }
+}
+*/
+
+//same qn better approach
+
 public class recursion{
-    static int pow(int a,int b){
-        if(b==0) return 1;
-        return pow(a,b-1)*a;
+    static int pow(int p,int q){
+        if(q==0) return 1;  //time complexity =O(logq)
+        if((q%2)==0){
+            return (pow(p,q/2)*pow(p,q/2));
+        }
+        else return (p*pow(p,q/2)*pow(p,q/2));
     }
     public static void main(String[]args){
-
-        System.out.println(pow(2,3));
+        System.out.println(pow(2,5));
     }
 }
