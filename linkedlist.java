@@ -135,7 +135,7 @@ public class linkedlist {
         void InsertAtStart(int val) {
             Node temp = new Node(val);
             if (head == null) {
-                head = temp;
+                head = temp;  //InsertAtStart(val)  this works same
                 tail = temp;
             } else {
                 temp.next = head;

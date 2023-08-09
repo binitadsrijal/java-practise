@@ -1,5 +1,5 @@
 import java.util.Scanner;
- //printing from 1 to n numbers through recursion-------------------------------------------*
+//printing from 1 to n numbers through recursion-------------------------------------------*
 /*
  * public class recursion{
  * static void printnumbers(int n){
@@ -18,8 +18,7 @@ import java.util.Scanner;
  * }
  */
 
-
- //printing from n to 1 numbers through recursion-------------------------------------*
+//printing from n to 1 numbers through recursion-------------------------------------*
 /*
  * public class recursion{
  * 
@@ -59,8 +58,8 @@ public class recursion { // factorial of n
     }
 }
 */
-           //fibonacci series--------------------------------------------------------------*
-
+//fibonacci series--------------------------------------------------------------*
+/* 
 public class recursion{
 static int fibonacci(int n){
     if(n==0 || n==1){
@@ -72,5 +71,20 @@ static int fibonacci(int n){
         for(int i=0;i<10;i++){   //upto 10th term fibonacci series
 System.out.println(fibonacci(i));
         }
+    }
+}
+*/
+
+//calculating sum of each digit-------------------------------------------------------*
+
+public class recursion {
+    static int sof(int n) {
+        if ((n >= 0) && (n <= 9))
+            return n;
+        return sof(n / 10) + n % 10; // sof(n/10) gives the sum of (n-1)th sum & n%10 gives nth term
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sof(1234));
     }
 }
